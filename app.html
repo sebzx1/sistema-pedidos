@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App - Sistema de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Para los íconos -->
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Sistema de Pedidos</h1>
+            <div class="carrito-icon" id="carrito-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="carrito-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="productos">
+            <h2>Productos Disponibles</h2>
+            <div class="productos-lista">
+                <div class="producto" data-id="1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZpzncZ8GuWR5QjILWQ0BcYpfaLWAnpxHrXs8hvv-KhVxusz6oor9X2FMi1Scn03MrOlk&usqp=CAU" alt="Producto A">
+                    <h3>Producto A</h3>
+                    <p>Precio: $10.00</p>
+                    <button class="agregar">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="2">
+                    <img src="https://www.cocinaconalegria.com/wp-content/themes/yootheme/cache/2b/que-son-los-productos-organicos-2b5dd652.jpeg" alt="Producto B">
+                    <h3>Producto B</h3>
+                    <p>Precio: $20.00</p>
+                    <button class="agregar">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="3">
+                    <img src="https://www.esneca.lat/wp-content/uploads/alimentos-organicos.jpg" alt="Producto C">
+                    <h3>Producto C</h3>
+                    <p>Precio: $30.00</p>
+                    <button class="agregar">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="3">
+                    <img src="https://s1.significados.com/foto/tipos-de-producto.jpg?class=article" alt="Producto C">
+                    <h3>Producto C</h3>
+                    <p>Precio: $30.00</p>
+                    <button class="agregar">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="3">
+                    <img src="https://www.lacostena.com.mx/media/uploads/Logos/portada_mayonesas.png" alt="Producto C">
+                    <h3>Producto C</h3>
+                    <p>Precio: $30.00</p>
+                    <button class="agregar">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="3">
+                    <img src="https://static-cse.canva.com/blob/984326/03Secretosfotosdeproducto.jpg" alt="Producto C">
+                    <h3>Producto C</h3>
+                    <p>Precio: $30.00</p>
+                    <button class="agregar">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="3">
+                    <img src="https://www.herbalife.com/dmassets/regional-reusable-assets/amer/samcam/sam/images/como%20hacemos%20nestros.jpg" alt="Producto C">
+                    <h3>Producto C</h3>
+                    <p>Precio: $30.00</p>
+                    <button class="agregar">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="3">
+                    <img src="https://www.argentina.gob.ar/sites/default/files/cleaning01.jpg" alt="Producto C">
+                    <h3>Producto C</h3>
+                    <p>Precio: $30.00</p>
+                    <button class="agregar">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="3">
+                    <img src="https://concepto.de/wp-content/uploads/2019/11/producto-packaging-e1572738514178.jpg" alt="Producto C">
+                    <h3>Producto C</h3>
+                    <p>Precio: $30.00</p>
+                    <button class="agregar">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="3">
+                    <img src="https://www.esneca.lat/wp-content/uploads/alimentos-organicos.jpg" alt="Producto C">
+                    <h3>Producto C</h3>
+                    <p>Precio: $30.00</p>
+                    <button class="agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrito" class="carrito">
+            <span id="carrito-close" class="close-btn">×</span> <!-- X para cerrar el carrito -->
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button id="finalizar-pedido">Finalizar Pedido</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
