@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal del formulario de login */
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Máximo ancho del formulario */
+    text-align: center;
+}
+
+/* Título del formulario */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Etiquetas de los campos */
+label {
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilos de los campos de entrada */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos del botón de submit */
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Cambiar color del botón al pasar el mouse */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el mensaje de error */
+#login-error {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Medios de consulta para pantallas pequeñas */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;  /* Hacer el formulario más ancho en pantallas pequeñas */
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;  /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    input, button {
+        font-size: 14px;  /* Reducir el tamaño de los campos y botón en pantallas pequeñas */
+        padding: 8px;
+    }
+}
